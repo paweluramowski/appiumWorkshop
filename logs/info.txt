@@ -1,0 +1,1 @@
+File created in order to push /logs folder to the repository.

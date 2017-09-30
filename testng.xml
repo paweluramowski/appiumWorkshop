@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Test-class Suite" thread-count="10">
+    <test name="MainLauncher">
+        <classes>
+            <class name="pl.uramowski.appium.runners.Device_HT23TW116860_Runner"/>
+        </classes>
+    </test>
+</suite>

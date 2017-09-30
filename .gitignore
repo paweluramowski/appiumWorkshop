@@ -1,0 +1,29 @@
+# Generated files & Maven related files
+target/
+test-output/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Local configuration file (sdk path, etc)
+local.properties
+.classpath
+appiumtests.iml
+.idea/
+*.iml
+.DS_Store
+.project
+.settings/
+
+# Log Files
+*.log
+logs/*
+!logs/info.txt
+
+# Java related files
+*.class
