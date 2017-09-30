@@ -10,13 +10,12 @@ import java.net.URL;
 
 public class MainRunner extends AbstractTestNGCucumberTests {
 
-    public static AppiumDriver wd;
+    public static AppiumDriver appiumDriver;
     private final String APP_PACKAGE = "io.appium.android.apis";
     private String APK_PATH = "apps/apiDemos.apk";
     private String APP_WAIT_ACTIVITY = "io.appium.android.apis.ApiDemos";
 
-    public MainRunner() {
-    }
+    public MainRunner() {}
 
     public void setUp(final String deviceId) throws Exception {
 
@@ -34,7 +33,7 @@ public class MainRunner extends AbstractTestNGCucumberTests {
         capabilities.setCapability("clearSystemFiles", true);
         System.out.println("initialising AndroidDriver");
         try {
-            wd = new AndroidDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+            appiumDriver = new AndroidDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
         } catch (Exception e) {
             e.printStackTrace();
             throw new SeleniumException("Appium driver did not start, check node's log :(");
